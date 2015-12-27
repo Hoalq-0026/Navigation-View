@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/navdrawer_header_background">
+
+    <RelativeLayout
+        android:id="@+id/avatar_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_navdrawer_header_magrin_top"
+        android:layout_marginStart="@dimen/dimen_20dp"
+        android:layout_marginTop="@dimen/dimen_navdrawer_header_magrin_top"
+        android:gravity="center_vertical"
+        tools:ignore="UselessParent">
+
+        <com.techdb.app.navigationdrawer.widgets.CircleImageView
+            android:id="@+id/account_image"
+            android:layout_width="@dimen/dimen_100dp"
+            android:layout_height="@dimen/dimen_100dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/son"/>
+
+        <com.techdb.app.navigationdrawer.widgets.OpenTextView
+            android:id="@+id/account_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dimen_20dp"
+            android:layout_toEndOf="@id/account_image"
+            android:text="Thai Bao"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/size_24sp"
+            android:textStyle="bold"
+            app:fixWidowWords="true"
+            app:fontVariation="medium"
+
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/account_box_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/avatar_container"
+        android:background="?android:selectableItemBackground"
+        android:clickable="true"
+        android:paddingBottom="@dimen/dimen_10dp"
+        android:paddingEnd="@dimen/dimen_5dp"
+        android:paddingStart="@dimen/dimen_20dp"
+        >
+
+        <com.techdb.app.navigationdrawer.widgets.OpenTextView
+            android:id="@+id/account_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thai Bao"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/size_20sp"
+            android:textStyle="bold"
+            app:fixWidowWords="true"
+            app:fontVariation="medium"
+            />
+
+        <com.techdb.app.navigationdrawer.widgets.OpenTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/account_user_email"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:layout_below="@id/account_user_name"
+            android:text="thaibao.vn@gmail.com"
+            android:textSize="@dimen/dimen_18sp"
+            android:textColor="@color/color_black"
+            android:textStyle="normal"
+            app:fixWidowWords="true"
+            app:fontVariation="normal"/>
+
+        <ImageView
+            android:layout_width="@dimen/dimen_40dp"
+            android:layout_height="@dimen/dimen_40dp"
+            android:id="@+id/account_switcher"
+            android:contentDescription="@null"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dimen_50dp"
+            android:layout_toEndOf="@id/account_user_email"
+            android:src="@drawable/ic_account_switcher"/>
+    </RelativeLayout>
+
+</RelativeLayout>

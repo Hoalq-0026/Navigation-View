@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.techdb.app.navigationdrawer.widgets.OpenTextView
+    android:id="@+id/tab_text_view"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:textColor="@color/menu_tab_color_selector"
+    android:textSize="@dimen/size_16sp"
+    android:textStyle="bold"
+    app:fixWidowWords="true"
+    app:fontVariation="special"
+    android:textAllCaps="true"
+    >
+
+</com.techdb.app.navigationdrawer.widgets.OpenTextView>

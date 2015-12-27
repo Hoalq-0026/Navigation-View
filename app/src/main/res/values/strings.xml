@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Navigationdrawer</string>
+    <string name="action_settings">Settings</string>
+    <string name="string_nav_drawer_register">Register</string>
+    <string name="string_nav_drawer_printer">Printer</string>
+    <string name="string_nav_drawer_setting">Settings</string>
+    <string name="string_nav_drawer_logout">Log out</string>
+    <string name="string_nav_drawer_exit">Exit</string>
+    <string name="action_search">Search</string>
+    <string name="string_navdrawer_description">App\\\'s navigation</string>
+    <string name="string_menu_tab_content">Menu</string>
+    <string name="string_orders_tab_content">Orders</string>
+</resources>

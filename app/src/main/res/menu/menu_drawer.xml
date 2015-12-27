@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/feature_items"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_drawer_register"
+            android:checked="false"
+            android:icon="@drawable/ic_nav_register"
+            android:title="@string/string_nav_drawer_register"></item>
+        <item
+            android:id="@+id/nav_drawer_printer"
+            android:checked="false"
+            android:icon="@drawable/ic_nav_printer"
+            android:title="@string/string_nav_drawer_printer"
+            />
+        <item
+            android:id="@+id/nav_drawer_setting"
+            android:checked="false"
+            android:icon="@drawable/ic_nav_settings"
+            android:title="@string/string_nav_drawer_setting"/>
+
+    </group>
+    <group
+        android:id="@+id/system_items"
+        android:checkableBehavior="single"
+        >
+        <item
+            android:id="@+id/nav_drawer_logout"
+            android:checkable="false"
+            android:title="@string/string_nav_drawer_logout"
+            />
+        <item
+            android:id="@+id/nav_drawer_exit"
+            android:checkable="false"
+            android:title="@string/string_nav_drawer_exit"/>
+    </group>
+</menu>
